@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Desencriptador</title>
+</head>
+
+<body>
+    <main>
+        <div class="container-a">
+            <img class="logo" src="img/logo.png">
+            <div class="elements">
+                <textarea id="input" placeholder="Ingrese el texto aquí"></textarea>
+                <p id="warningText">&#9888 solo letras minusculas y sin acento</p>
+                <button onclick="convertirTexto('encriptar')" id="btnEncriptar">Encriptar</button>
+                <button onclick="convertirTexto('desencriptar')">Desencriptar</button>
+            </div>
+        </div>
+
+        <div class="container-b">
+            <div class="elements">
+                <div class="container-output" id="divImg">
+                    <img class="imgTxtArea" src="img/output-background.png">
+                </div>
+                <div class="container-output" id="divTextArea" style="display: none;">
+                    <h2>Salida de texto</h2>
+                    <textarea id="output" placeholder="Texto Encriptado/Desencriptado" readonly></textarea>
+                    <button onclick="copiarTexto()" id="btnCopiar">Copiar</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </main>
+    <footer>
+        <p class="footer">Emmanuel Campos - emmanuelcampos2111@gmail.com</p>
+    </footer>
+</body>
+
+</html>
